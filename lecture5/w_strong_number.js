@@ -20,6 +20,23 @@ if (isNaN(number))
 
 else {
     length = number.toString().length;
-
+    console.log(`length = ${length}`);
+    let sum = 0;
+    while (length > 0)
+    {
+        digit = Number(number.toString()[length - 1]);
+        console.log(`digit = ${digit}`);
+        sum += factorial(digit);
+        console.log(`sum = ${sum}`);
+        length--;
+    }
+    if (sum === number)
+    {
+        console.log(number + " is a strong number");
+    }
+    else
+    {
+        console.log(number + " is not a strong number");
+    }
     
 }
