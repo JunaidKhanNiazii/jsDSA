@@ -1,12 +1,10 @@
-let arr = [1, 2, 3, 4, 5];
+let array = [1, 2, 3, 4, 5];
 
-let temp = arr[arr.length-1];
+let copy = array[array.length-1]
 
-
-for(let i=arr.length-2; i>=0; i--)
+for (let i = array.length -1; i >= 1; i --)
 {
-    arr[i+1] = arr[i];
+    array[i] = array[i-1]
 }
-
-arr[0] = temp;
-console.log(arr);
+array[0] = copy
+console.log(array)
